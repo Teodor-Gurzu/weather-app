@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="search-section">
+        <input type="text" id="city-input" placeholder="Introdu orașul">
+        <button id="search-btn">Caută vremea</button>
+        <button id="location-btn">Locația mea</button>
+      </section>
+
+      <section id="loading" style="display: none;">
+        <p>Se încarcă...</p>
+      </section>
+
+      <section id="error" style="display: none;">
+        <p>Ooops! Ceva n-a mers. Încearcă din nou.</p>
+      </section>
+
+      <section id="weather-display" style="display: none;">
+        <p id="temperature">Temperatura: --°C</p>
+        <p id="humidity">Umiditate: --%</p>
+        <p id="wind">Vânt: -- km/h</p>
+        <p id="sunrise">Răsărit: --</p>
+        <p id="sunset">Apus: --</p>
+      </section>
+    </div>
+  </body>
+</html>
